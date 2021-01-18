@@ -4,9 +4,7 @@
         <script src="script.js" type="text/javasript"></script>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
-    
     <body>
-        
         <div id="banner">
             <img id="banner-image" src="images/jumbo.png" alt="New Zealand Landscape">
             <div id="logo">
@@ -15,16 +13,14 @@
         </div>
 
         <div id="navbar-static">
-            <a class="active" href="index.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="index.html">Home</a>
+            <a class="active" href="about.html">About Us</a>
             <a href="gallery.html">Gallery</a>        
             <a href="menu.html">Menu</a>
             <a href="reservations.html">Reservations</a>           
             <a href="teaomaori.html">Te Ao Maori</a>
             <a href="contact.html">Contact Us</a>
         </div>
-        
-        
 
         <div id="intro">
             <p>
@@ -55,26 +51,5 @@
             </p>
         </div> 
 
-       
-
     </body>
-    <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-            }
-        }
-    </script>
 </html>

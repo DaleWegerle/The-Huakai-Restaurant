@@ -6,8 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <div id="banner">
+            <img id="banner-image" src="images/jumbo.png" alt="New Zealand Landscape">
+            <div id="logo">
+                <img src="images/logo.png" alt="Haukai Restaurant Logo">
+            </div>
+        </div>
+
         <div id="navbar-static">
-            <a href="index.html">Home</a>
+            <a  href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="gallery.html">Gallery</a>        
             <a href="menu.html">Menu</a>
@@ -39,29 +46,29 @@
 
         <h3>Reservation Form</h3>
 
-        <form id="myForm">
+        <form id="myForm" method="POST">
             <p>
-                <label for="fname">Name:</label>
+                <label for="fname">Name:</label><br>
                 <input type="text" name="fname" value=" " required>
             </p>
             <p>
-                <label for="lname">Surname:</label>
+                <label for="lname">Surname:</label><br>
                 <input type="text" name="lname" value=" " required>
             </p>
             <p>
-                <label for="phone">Phone Number:</label>
+                <label for="phone">Phone Number:</label><br>
                 <input type="number" name="phone" value=" " required>
             </p>
             <p>
-                <label for="date">Date:</label>
+                <label for="date">Date:</label><br>
                 <input type="date" name="date" value=" " required>
             </p>
             <p>
-                <label for="time">Time:</label>
+                <label for="time">Time:</label><br>
                 <input type="time" name="time" value=" " required>
             </p>
             <p>
-                <label for="party">Party Size:</label>
+                <label for="party">Party Size:</label><br>
                 <input type="number" name="party" value=" " required>
             </p>
         </form>
