@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="script.js" type="text/javasript"></script>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="styles/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -35,9 +35,47 @@
                 finibus, augue tortor luctus est, vel vehicula magna sapien sit amet ex. In hac habitasse 
                 platea dictumst. Fusce vel accumsan nisl.<br><br>
             </p>
-        </div> 
+        
 
+        <h3>Reservation Form</h3>
 
+        <form id="myForm">
+            <p>
+                <label for="fname">Name:</label>
+                <input type="text" name="fname" value=" " required>
+            </p>
+            <p>
+                <label for="lname">Surname:</label>
+                <input type="text" name="lname" value=" " required>
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="number" name="phone" value=" " required>
+            </p>
+            <p>
+                <label for="date">Date:</label>
+                <input type="date" name="date" value=" " required>
+            </p>
+            <p>
+                <label for="time">Time:</label>
+                <input type="time" name="time" value=" " required>
+            </p>
+            <p>
+                <label for="party">Party Size:</label>
+                <input type="number" name="party" value=" " required>
+            </p>
+        </form>
+
+        <button id="res-button" onclick="displayFunction()">Display Input</button>
+
+        <p id="displayfname" style="color: red;"></p>
+		<p id="displaylname" style="color: red;"></p>
+        <p id="displayphone" style="color: red;"></p>
+        <p id="displaydate" style="color: red;"></p>
+		<p id="displaytime" style="color: red;"></p>
+		<p id="displayparty" style="color: red;"></p>
+
+    </div> 
 
     </body>
 </html>
