@@ -5,30 +5,19 @@
         <link rel="stylesheet" href="styles/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    
     <body>
-        
-        <div id="banner">
-            <img id="banner-image" src="images/jumbo.png" alt="New Zealand Landscape">
-            <div id="logo">
-                <p>nau mai</p>
-                <h1 >Huakai Restaurant</h1>
-            </div>
-        </div>
-
-        <div id="navbar">
-            <a class="active" href="index.html">Home</a>
+        <div id="navbar-static">
+            <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="gallery.html">Gallery</a>        
             <a href="menu.html">Menu</a>
-            <a href="reservations.html">Reservations</a>           
+            <a class="active" href="reservations.html">Reservations</a>           
             <a href="teaomaori.html">Te Ao Maori</a>
             <a href="contact.html">Contact Us</a>
         </div>
-        
-        
 
         <div id="intro">
+            <h1>Reservations</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui felis, 
                 molestie id cursus at, tempor sed erat. Sed vulputate libero venenatis lacus 
@@ -45,40 +34,10 @@
                 blandit vitae volutpat et, molestie nec tortor. Vestibulum lobortis, augue sed semper 
                 finibus, augue tortor luctus est, vel vehicula magna sapien sit amet ex. In hac habitasse 
                 platea dictumst. Fusce vel accumsan nisl.<br><br>
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui felis, 
-                molestie id cursus at, tempor sed erat. Sed vulputate libero venenatis lacus 
-                porta, euismod gravida elit posuere. Donec a ipsum ultrices, lobortis purus ac, 
-                porta est. Maecenas nec nibh orci. Nulla ut sagittis ipsum. Mauris quam justo, 
-                blandit vitae volutpat et, molestie nec tortor. Vestibulum lobortis, augue sed semper 
-                finibus, augue tortor luctus est, vel vehicula magna sapien sit amet ex. In hac habitasse 
-                platea dictumst. Fusce vel accumsan nisl.
-
             </p>
         </div> 
 
-        <div id="footer">
-            <p>Footer</p>
-          </div>
+
 
     </body>
-    <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-            }
-        }
-    </script>
 </html>
