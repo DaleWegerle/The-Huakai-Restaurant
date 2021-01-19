@@ -103,7 +103,7 @@ body {
   #banner {
     position: relative;
     text-align: center;
-    background-color: #212121;
+    background-color: #ffffff;
     color: rgb(255, 255, 255);
     height: auto;
   }
@@ -179,4 +179,34 @@ input{
 
 .active {
   background-color: #FFCC80;
+}
+
+/*Gallery Styling*/
+
+div.gallery a{
+  margin-bottom: -5px;
+
+}
+
+div.gallery {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  float: left;
+  width: 33.3%;
+}
+
+div.gallery:hover {
+  border: 3px solid #FFCC80;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  font-size: 10px;
+  padding: 15px;
+  text-align: center;
 }
