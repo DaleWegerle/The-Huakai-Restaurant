@@ -6,21 +6,23 @@
         <script src="https://use.fontawesome.com/dcd44544d0.js"></script>
     </head>
     <body>
-        <div id="banner">
-            <img id="banner-image" src="images/reservations.gif" alt="New Zealand Landscape">
-            <div id="logo">
-                <img src="images/logo.png" alt="Haukai Restaurant Logo">
-            </div>
-        </div>
 
-        <div id="navbar-static">
-            <a  href="index.html">Home</a>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
             <a href="about.html">About Kuakai</a>
             <a href="gallery.html">Gallery</a>        
             <a href="menu.html">Menu</a>
             <a class="active" href="reservations.html">Reservations</a>           
             <a href="teaomaori.html">Te Ao Maori</a>
             <a href="contact.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+        <div id="banner">
+            <img id="banner-image" src="images/reservations.gif" alt="New Zealand Landscape">
+            
         </div>
 
         <div id="intro">
@@ -46,18 +48,19 @@
 
         <h3>Reservation Form</h3>
 
-        <form id="myForm" method="POST">
+        <form id="myForm" action="dalew36@gmail.com" method="post" enctype="text/plain">
             <p>
                 <label for="fname">Name:</label><br>
-                <input type="text" name="fname" value=" " required>
+                <input type="text" name="fname"  required>
             </p>
             <p>
                 <label for="lname">Surname:</label><br>
-                <input type="text" name="lname" value=" " required>
+                <input type="text" name="lname"  required>
             </p>
             <p>
                 <label for="phone">Phone Number:</label><br>
-                <input type="number" name="phone" value=" " required>
+                <input type="text" name="phone"  required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="eg: 123-123-1234"><br>
+                <small>Format: 123-123-1234</small>
             </p>
             <p>
                 <label for="date">Date:</label><br>
@@ -69,18 +72,10 @@
             </p>
             <p>
                 <label for="party">Party Size:</label><br>
-                <input type="number" name="party" value=" " required>
+                <input type="number" name="party" value=" " required min="1">
             </p>
+            <input id="button" class="res" type="submit" value="Submit">
         </form>
-
-        <button id="res-button" onclick="displayFunction()">Display Input</button>
-
-        <p id="displayfname" style="color: red;"></p>
-		<p id="displaylname" style="color: red;"></p>
-        <p id="displayphone" style="color: red;"></p>
-        <p id="displaydate" style="color: red;"></p>
-		<p id="displaytime" style="color: red;"></p>
-		<p id="displayparty" style="color: red;"></p>
 
     </div> 
 
@@ -91,6 +86,17 @@
         <a href="#"><i class="fa fa-linkedin fa-xs" aria-hidden="true"></i></a>
         
       </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
 
     </body>
 </html>
