@@ -4,6 +4,11 @@
         <script src="script.js" type="text/javasript"></script>
         <link rel="stylesheet" href="styles/styles.css">
         <script src="https://use.fontawesome.com/dcd44544d0.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+        <title>The Huakai Restaurant</title>
+
+        
 
     </head>
 
@@ -20,11 +25,7 @@
         </a>
       </div>
 
-    <body>
-        <div id="banner">
-            <img id="banner-image" src="images/contact.gif" alt="New Zealand Landscape">
-            
-        </div>
+      <div id="map" class="map"></div>
 
         <div id="intro">
             <h1>Contact Us</h1>
@@ -45,12 +46,15 @@
                 <p><strong>Enquiries: </strong></p>
                 <p>Phone: (123) 457 1234</p>
                 <p>Email: info@huakai.co.nz</p>
+                <p><strong>Address: </strong></p>
+                <p>Bay of Islands</p>
+                <p>New Zealand</p>
             </div>
 
             <div id="Business-Hours">
                 <h4><strong>Business Hours</strong></h4>
                 <p><strong>Wednesday - Sunday:</strong> 17:00 - 22:00</p>
-                <button id="button" >Email Us</button>
+                <a href="mailto:someone@example.com" method="post" enctype="text/plain"><button id="button" >Email Us</button></a>
             </div>
             <br>
         <br>
@@ -60,11 +64,10 @@
         
 
         <div class="icon-bar">
-            <a href="#"><i class="fa fa-facebook fa-xs" aria-hidden="true"></i></a> 
-            <a href="#"><i class="fa fa-twitter fa-xs" aria-hidden="true"></i></a> 
-            <a href="#"><i class="fa fa-instagram fa-xs" aria-hidden="true"></i></a> 
-            <a href="#"><i class="fa fa-linkedin fa-xs" aria-hidden="true"></i></a>
-            
+            <a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook fa-xs" aria-hidden="true"></i></a> 
+            <a href="https://twitter.com/" target="blank"><i class="fa fa-twitter fa-xs" aria-hidden="true"></i></a> 
+            <a href="https://www.facebook.com/" target="blank"><i class="fa fa-instagram fa-xs" aria-hidden="true"></i></a> 
+            <a href="https://www.linkedin.com/" target="blank"><i class="fa fa-linkedin fa-xs" aria-hidden="true"></i></a> 
         </div>
 
         <script>
@@ -76,6 +79,19 @@
                 x.className = "topnav";
               }
             }
+
+            var map = new ol.Map({
+                target: 'map',
+                layers: [
+                    new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                    })
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([174.04, -35.16]),
+                    zoom: 15
+                    })
+                });
         </script>
 
     
