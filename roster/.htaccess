@@ -1,0 +1,4 @@
+AuthName Please log in to view this page"
+AuthUserFile ../pswrd/.htpasswd
+AuthType Basic
+require valid-user
