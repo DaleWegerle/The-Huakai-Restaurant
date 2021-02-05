@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js" type="text/javasript"></script>
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="https://use.fontawesome.com/dcd44544d0.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>The Huakai Restaurant</title>
+        <link href='fullcalendar/main.css' rel='stylesheet' />
+        <script src='fullcalendar/main.js'></script>
+        <script src="https://cdn.jsdelivr.net/combine/npm/fullcalendar@5.5.1,npm/fullcalendar@5.5.1/locales-all.min.js,npm/fullcalendar@5.5.1/locales-all.min.js,npm/fullcalendar@5.5.1/main.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/fullcalendar@5.5.1/main.min.css,npm/fullcalendar@5.5.1/main.min.css">
+        
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', function() {
+              var calendarEl = document.getElementById('calendar');
+              var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                selectable: true,
+              });
+              calendar.render();
+            });
+
+          
+          </script>
+
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a  href="index.html">Home</a>
+            <a href="about.html">About Kuakai</a>
+            <a href="gallery.html">Gallery</a>        
+            <a href="menu.html">Menu</a>
+            <a href="reservations.html">Reservations</a>           
+            <a href="teaomaori.html">Te Ao Maori</a>
+            <a href="contact.html">Contact Us</a>
+            <a class="active"  href="roster.html">Roster</href>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        
+        <div id="banner">
+            <img id="banner-image" src="images/roster.png" alt="New Zealand Landscape">
+        </div>
+        
+        <div id="intro">
+            <h3>Employee Details</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui felis, 
+                molestie id cursus at, tempor sed erat. Sed vulputate libero venenatis lacus 
+                porta, euismod gravida elit posuere. Donec a ipsum ultrices, lobortis purus ac, 
+            </p><br>
+            <p>
+                <div id="employee">
+                    <img id="avatar" src="images/staff.png">
+                    <hr>
+                    <p><strong>Employee Name</strong></p>
+                    <p>Number:
+                    0821234567</p>
+                    <p>Email:
+                    abc@gmail.com</p>
+                </div>
+            </p>
+            <p>
+                <div id="employee">
+                    <img id="avatar" src="images/staff.png">
+                    <hr>
+                    <p><strong>Employee Name</strong></p>
+                    <p>Number:
+                    0821234567</p>
+                    <p>Email:
+                    abc@gmail.com</p>
+                </div>
+            </p>
+            <p>
+                <div id="employee">
+                    <img id="avatar" src="images/staff.png">
+                    <hr>
+                    <p><strong>Employee Name</strong></p>
+                    <p>Number:
+                    0821234567</p>
+                    <p>Email:
+                    abc@gmail.com</p>
+                    </div>
+            </p>
+        </div>
+            
+        <div id="intro" style="clear: both;">
+            <p>
+            <h3 >Employee Roster</h3>
+            
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui felis, 
+                molestie id cursus at, tempor sed erat. Sed vulputate libero venenatis lacus 
+                porta, euismod gravida elit posuere. Donec a ipsum ultrices, lobortis purus ac, 
+            </p><br>
+            <div id="calendar" ></div>
+        </div>
+
+       
+
+        <div class="icon-bar">
+          <a href="https://www.facebook.com/" target="blank"><i class="fa fa-facebook fa-xs" aria-hidden="true"></i></a> 
+          <a href="https://twitter.com/" target="blank"><i class="fa fa-twitter fa-xs" aria-hidden="true"></i></a> 
+          <a href="https://www.facebook.com/" target="blank"><i class="fa fa-instagram fa-xs" aria-hidden="true"></i></a> 
+          <a href="https://www.linkedin.com/" target="blank"><i class="fa fa-linkedin fa-xs" aria-hidden="true"></i></a> 
+      </div>
+      
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+
+
+    </body>
+</html>
