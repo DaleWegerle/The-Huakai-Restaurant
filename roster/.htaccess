@@ -1,4 +1,4 @@
-AuthName Please log in to view this page"
-AuthUserFile ../pswrd/.htpasswd
+AuthName "Please Sign In To Access Roster"
+AuthUserFile ../../.htpasswd
 AuthType Basic
 require valid-user
